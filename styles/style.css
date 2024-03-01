@@ -1,33 +1,224 @@
 /* fonts */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@400;700&display=swap');
 
 /* common styls */
 body{
-    font-family: Poppins;
-    color: #3A3A3A;
-  }
-  
-  /* header start */
-  header{
-    margin: 0 120px;
-    margin-top: 55px;
-  }
-  .logo h3{
-    font-size: 24px; 
-  }
-  .header-item{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .nav a{
-    text-decoration: none;
-    color: #3A3A3A;
+  margin: 0;
+  font-family: Poppins;
+  color: #3A3A3A;
+}
+p{
   font-size: 16px;
+}
+/* header start */
+header{
+  width: 1200px;
+  margin: auto;
+  margin-top: 55px;
+}
+.logo h3{
+  font-size: 24px; 
+  font-weight: 700;
+}
+.header-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav a{
+  text-decoration: none;
+  color: #3A3A3A;
+  font-size: 16px;
+  font-weight: 600;
   margin-right: 34px;
 }
-
+  
 /* Banner */
+.banner{
+  width: 1200px;
+  margin: auto;
+  margin-top: 55px;
+}
 .banner-container{
   display: flex;
+  justify-content: space-between;
+}
+.half-width{
+  width: 582px;
+  margin-bottom: 30px;
+}
+.half-width h1{
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.half-width p{
+  margin-top: 0;
+  font-weight: 600;
+}
+.half-width img{
+  margin-left: 60px;
+  transition: transform 1s ease-in-out;
+}
+.half-width img:hover{
+  transform: scale(1.1);
+}
+.button{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  background-color: #E02C6D;
+  /* margin: 50px; */
+  margin-top: 16px;
+  padding: 10px 24px;
+  border-radius: 41px;
+}
+.button i{
+  margin-left: 10px;
+}
+
+/* e-commerce logo */
+.e-commerce-logo{
+  width: 1100px;
+  margin: auto;
+  margin-top: 55px;
+}
+hr{
+  width: 950px;
+  border: 1px solid rgb(236, 235, 235);
+}
+.logos{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 26px 0;
+}
+
+/* Popular Collection */
+.popular-collection{
+  width: 1050px;
+  margin: auto;
+  margin-top: 82px;
+}
+.pc-header h3{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px; */
+}
+.single-product{
+  width: 329px;
+  height: 476px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.product-img{
+  display: inline-block;
+  width: 300px;
+  height: 256px;
+  margin: 16px 15px;
+}
+.product-info{
+  margin: 0 15px;
+  margin-bottom: 16px;
+
+}
+.product-info h3{
+  font-size: 28px;
+  font-weight: 500;
+}
+.product-info span{
+  font-family: Inter;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 7px 0;
+}
+.product-info h3{
+  margin: 0;
+}
+.product-info p{
+  font-family: Inter;
+  color: #787885;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+.product-info p i{
+  color: #FB8200;
+}
+.more-products{
+  text-align: right;
+}
+.more-products-link{
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(224, 44, 109, 0.87);
+  font-weight: 700;
+  margin-top: 50px;
+}
+.more-products-link i{
+  margin-left: 10px;
+}
+
+/* Buyer review */
+.buyers-review{
+  width: 1050px;
+  margin: auto;
+  margin-top: 55px;
+  margin-bottom: 84px;
+}
+.buyers-review h3{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+.reviews{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.single-review{
+  width: 329px;
+  text-align: center;
+}
+.single-review img{
+  border-radius: 50%;
+}
+.single-review h2{
+  font-size: 24px;
+}
+
+/* Footer start */
+footer{
+  color: #fff;
+  text-align: center;
+  height: 240px;
+  background-color: #0A0826;
+}
+.footer-container{
+  padding: 46px 0;
+}
+.footer-container h3{
+  margin: 0;
+}
+.footer-container p{
+  font-size: 14px;
+}
+.social-icon i{
+  font-size: 18px;
+  background-color: rgb(46, 41, 53);
+  border-radius: 50%;
+  margin: 5px;
+  padding: 7px;
 }
